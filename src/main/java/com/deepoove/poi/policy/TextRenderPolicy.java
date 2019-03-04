@@ -61,7 +61,7 @@ public class TextRenderPolicy extends AbstractRenderPolicy {
         if (null != split) {
             run.setText(split[0], 0);
             for (int i = 1; i < split.length; i++) {
-                run.addBreak();
+                run.addCarriageReturn();
                 run.setText(split[i]);
             }
         }
